@@ -1,0 +1,14 @@
+[
+  { "title": "Frontend Developer Intern", "company": "Brightleaf Labs", "location": "Bengaluru", "mode": "hybrid", "stipend": 15000, "duration_weeks": 12, "skills": ["HTML", "CSS", "JavaScript", "React"], "deadline": "2026-12-15", "status": "open" },
+  { "title": "Backend Engineering Intern", "company": "Northwind Cloud", "location": "Remote", "mode": "remote", "stipend": 20000, "duration_weeks": 16, "skills": ["Node.js", "Express", "SQL"], "deadline": "2026-12-20", "status": "open" },
+  { "title": "Data Analyst Intern", "company": "Quanta Metrics", "location": "Pune", "mode": "onsite", "stipend": 12000, "duration_weeks": 8, "skills": ["Python", "SQL", "Excel"], "deadline": "2026-12-05", "status": "open" },
+  { "title": "UI/UX Design Intern", "company": "Pixel & Pine", "location": "Chennai", "mode": "hybrid", "stipend": 10000, "duration_weeks": 10, "skills": ["Figma", "User Research"], "deadline": "2026-11-30", "status": "closed" },
+  { "title": "Machine Learning Intern", "company": "Synapse AI", "location": "Hyderabad", "mode": "onsite", "stipend": 25000, "duration_weeks": 24, "skills": ["Python", "PyTorch", "Statistics"], "deadline": "2027-01-10", "status": "open" },
+  { "title": "DevOps Intern", "company": "Northwind Cloud", "location": "Remote", "mode": "remote", "stipend": 18000, "duration_weeks": 12, "skills": ["Docker", "Linux", "CI/CD"], "deadline": "2027-01-05", "status": "open" },
+  { "title": "Mobile App Intern", "company": "Kite Mobile", "location": "Kochi", "mode": "hybrid", "stipend": 14000, "duration_weeks": 12, "skills": ["Flutter", "Dart"], "deadline": "2026-12-28", "status": "open" },
+  { "title": "Content Marketing Intern", "company": "Brightleaf Labs", "location": "Remote", "mode": "remote", "stipend": 8000, "duration_weeks": 6, "skills": ["Writing", "SEO"], "deadline": "2026-12-01", "status": "closed" },
+  { "title": "QA Automation Intern", "company": "Testwise", "location": "Noida", "mode": "onsite", "stipend": 11000, "duration_weeks": 10, "skills": ["Selenium", "JavaScript"], "deadline": "2026-12-18", "status": "open" },
+  { "title": "Cybersecurity Intern", "company": "Shieldline", "location": "Mumbai", "mode": "hybrid", "stipend": 22000, "duration_weeks": 20, "skills": ["Networking", "Linux", "OWASP"], "deadline": "2027-01-15", "status": "open" },
+  { "title": "Product Management Intern", "company": "Quanta Metrics", "location": "Bengaluru", "mode": "onsite", "stipend": 16000, "duration_weeks": 12, "skills": ["Communication", "Analytics"], "deadline": "2026-12-22", "status": "open" },
+  { "title": "Full Stack Intern", "company": "Kite Mobile", "location": "Remote", "mode": "remote", "stipend": 19000, "duration_weeks": 16, "skills": ["React", "Node.js", "PostgreSQL"], "deadline": "2027-01-02", "status": "open" }
+]
