@@ -1,0 +1,62 @@
+@base = http://localhost:3000
+
+### Health
+GET {{base}}/health
+
+### List (page 1, 5 per page)
+GET {{base}}/api/internships?page=1&limit=5
+
+### Filter + sort
+GET {{base}}/api/internships?status=open&mode=remote&sort=stipend&order=desc
+
+### Search
+GET {{base}}/api/internships?q=python
+
+### Get one
+GET {{base}}/api/internships/1
+
+### Create
+POST {{base}}/api/internships
+Content-Type: application/json
+
+{
+  "title": "Cloud Support Intern",
+  "company": "Acme Corp",
+  "location": "Delhi",
+  "mode": "remote",
+  "stipend": 12000,
+  "duration_weeks": 8,
+  "skills": ["AWS", "Linux"],
+  "deadline": "2027-03-01"
+}
+
+### Partial update
+PATCH {{base}}/api/internships/13
+Content-Type: application/json
+
+{ "status": "closed" }
+
+### Replace
+PUT {{base}}/api/internships/13
+Content-Type: application/json
+
+{
+  "title": "Cloud Intern",
+  "company": "Acme Corp",
+  "location": "Delhi",
+  "mode": "hybrid",
+  "duration_weeks": 10,
+  "deadline": "2027-03-15"
+}
+
+### Delete
+DELETE {{base}}/api/internships/13
+
+### Validation error (400)
+POST {{base}}/api/internships
+Content-Type: application/json
+
+{ "title": "x", "mode": "space", "deadline": "2027-02-30" }
+
+### Not found (404)
+GET {{base}}/api/internships/999
