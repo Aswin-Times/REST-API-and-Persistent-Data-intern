@@ -3,8 +3,9 @@
  * prepared statements with bound parameters (no string-built values).
  */
 
+const { SORTABLE } = require('./validation');
+
 const COLUMNS = ['title', 'company', 'location', 'mode', 'stipend', 'duration_weeks', 'skills', 'deadline', 'status'];
-const SORTABLE = ['id', 'title', 'company', 'stipend', 'duration_weeks', 'deadline', 'created_at'];
 
 function toApi(row) {
   if (!row) return null;
@@ -37,8 +38,6 @@ function createRepository(db) {
   }
 
   return {
-    SORTABLE,
-
     list({ page, limit, sort, order, ...filters }) {
       const { sql, params } = buildWhere(filters);
       // sort/order are validated against a whitelist before reaching here.
@@ -79,4 +78,4 @@ function createRepository(db) {
   };
 }
 
-module.exports = { createRepository, COLUMNS, SORTABLE };
+module.exports = { createRepository, COLUMNS };
