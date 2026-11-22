@@ -4,6 +4,18 @@ A REST API for internship listings, built with **Node.js + Express** and persist
 It supports full create / read / update / delete, pagination, filtering, search and sorting,
 validates every input, and returns predictable status codes and one error format.
 
+## Live demo
+
+**Base URL: https://internship-records-api-sxpt.onrender.com**
+
+- Health: https://internship-records-api-sxpt.onrender.com/health
+- List: https://internship-records-api-sxpt.onrender.com/api/internships?page=1&limit=5
+- Detail: https://internship-records-api-sxpt.onrender.com/api/internships/1
+
+Hosted on Render's free plan: the first request after ~15 minutes idle can take up to a minute
+while the service wakes. The free plan has no persistent disk, so the SQLite file resets to the
+12 seed records whenever the service restarts or redeploys. Locally, data persists in `data/internships.db`.
+
 - **Stack:** Node.js 18+, Express 4, better-sqlite3, Jest + Supertest
 - **Data model and response format:** [`docs/data-model.md`](docs/data-model.md)
 - **Schema:** [`db/schema.sql`](db/schema.sql) · **Seed data:** [`db/seed.json`](db/seed.json) · **Ready-to-import SQL:** [`db/sample-data.sql`](db/sample-data.sql)
